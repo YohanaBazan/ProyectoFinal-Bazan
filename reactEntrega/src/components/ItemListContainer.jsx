@@ -22,13 +22,13 @@ const ItemListContainer = ({greetings}) => {
     
     console.log 
     return (
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-            <h2 style={{ width: "100%", textAlign: "center", marginBottom: "20px" }}>{greetings}</h2>
-            {products.length > 0 ? (
-                products.map(prod => (
-                    <div key={prod.id} style={{ margin: "10px", textAlign: "center" }}>
-                        <ItemList products={[prod]} />
-                    </div>
+        <div className=" flex flex-wrap justify-center ">
+    <h2 className="w-full text-center mb-20">{greetings}</h2>
+    {products.length > 0 ? (
+        products.map(prod => (
+            <div key={prod.id} className="m-10 text-center">
+                <ItemList products={[prod]} />
+            </div>
                 ))
             ) : (
                 <p>Loading...</p>

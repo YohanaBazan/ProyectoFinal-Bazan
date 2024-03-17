@@ -10,15 +10,24 @@ function App() {
         <>
             <BrowserRouter>
                 <Navbar />
-                <Routes>
+                <div className='font-sans text-2xl'>
+                <Routes >
+    
                     <Route path="/"
-                        element={<ItemListContainer greetings={"¡Una tienda pensada para vos!"} className="font-size: 1.875rem;"/>}
+                        element={<ItemListContainer greetings={"¡Una tienda pensada para vos!"} />}
+                    />
+        
+                    <Route path="/"
+                        element={<ItemListContainer greetings={"¡Una tienda pensada para vos!"} />}
                     />
                     <Route path="/category/:categoryId"
-                        element={<ItemListContainer greetings={"Listado de Productos filtrados"} />}
+                        element={<ItemListContainer greetings={"Productos"} />}
                     />
                     <Route path="/detail/:productId" element={<ItemDetailContainer />} />
                 </Routes>
+
+                </div>
+                
             </BrowserRouter>
         </>
     );

@@ -3,10 +3,10 @@ import { Link } from "react-router-dom"
 const Item = ({ id, name, img, category, price }) => {
     return (
 
-        <div className="border-radius: 0.125rem  border-color: rgb(2 6 23 border-style: solid)"    >
-<img className="mx-auto" src={img} alt={name} />
+        <div className="border rounded border-gray-300 shadow-md p-4"    >
+<img className="w-96 h-96" src={img} alt={name} />
 <h2>{name}</h2>
-<h3 className="text-gray-700 text-base">{price}</h3>
+<h3 className="text-gray-700 text-base font-serif">{price}</h3>
 <Link to={`/detail/${id}`}>Ver Descripción</Link>
 
 

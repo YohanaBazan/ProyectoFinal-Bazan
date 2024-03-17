@@ -15,7 +15,7 @@ const ItemCount = ({ initial = 1, stock,onAdd }) => {
     }
     return (
         <div>
-            <h1>{count}</h1>
+            <h2>{count}</h2>
             <button onClick={decrement}>-</button>
             <button onClick={increment}>+</button>
             <div className="text-center mt-4">
