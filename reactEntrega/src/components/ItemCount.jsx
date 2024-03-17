@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const ItemCount = ({ initial = 1, stock,onAdd }) => {
+const ItemCount = ({ initial = 0, stock,onAdd }) => {
     const [count, setCount] = useState(initial)
 
     const increment = () => {
@@ -9,12 +9,12 @@ const ItemCount = ({ initial = 1, stock,onAdd }) => {
         }
     }
     const decrement = () => {
-        if (count > 1) {
+        if (count > 0) {
             setCount(prev => prev - 1)
         }
     }
     return (
-        <div>
+        <div className="controls flex items-center justify-center">
             <h2>{count}</h2>
             <button onClick={decrement}>-</button>
             <button onClick={increment}>+</button>

@@ -4,7 +4,7 @@ const products = [
         name: 'Butterfly',
         price: '$5.000',
         category: 'Remeras',
-        img: './src/assets/images/Remeras/1.png',
+        img: './src/assets/images/1.png',
         stock: '10',
         description: 'Crop Top con estampa de mariposa y craneo.'
 
@@ -15,7 +15,7 @@ const products = [
         name: 'First Coffe',
         price: '$4.000',
         category: 'Remeras',
-        img: './src/assets/images/Remeras/3.png',
+        img: './src/assets/images/3.png',
         stock: '8',
         description: 'Musculosa Dark, con frase en ingles "No hablar antes del cafe.'
 
@@ -26,7 +26,7 @@ const products = [
         name: 'Lovers',
         price: '$6.000',
         category: 'Remeras',
-        img: './src/assets/images/Remeras/20.png',
+        img: './src/assets/images/20.png',
         stock: '5',
         description: 'Remeron con estampa de carta de tarot de "Los Amantes".'
     },
@@ -36,7 +36,7 @@ const products = [
         name: 'Pant Skull',
         price: '$20.000',
         category: 'Pantalones',
-        img: './src/assets/images/Pantalones/12.png',
+        img: './src/assets/images/12.png',
         stock: '7',
         description: 'Pantalon de gabardina ancho con estampa de calavera en el bolsillo  .'
 
@@ -47,7 +47,7 @@ const products = [
         name: 'Jean Tarot Dark',
         price: '$30.000',
         category: 'Pantalones',
-        img: './src/assets/images/Pantalones/16.png',
+        img: './src/assets/images/16.png',
         stock: '4',
         description: 'Jean Wide Leg con roturas y estampas de cartas de Tarot.'
     },
@@ -57,7 +57,7 @@ const products = [
         name: 'Black Cargo Disaster',
         price: '$25.000',
         category: 'Pantalones',
-        img: './src/assets/images/Pantalones/14.png',
+        img: './src/assets/images/14.png',
         stock: '9',
         description: 'Jean cargo con cadena y estampas varias.'
 
@@ -68,7 +68,7 @@ const products = [
         name: 'Dancers',
         price: '$12.000',
         category: 'Buzos',
-        img: './src/assets/images/Buzos/5.png',
+        img: './src/assets/images/5.png',
         stock: '8',
         description: 'Buzo rústico oversize con estampa de esqueletos bailando.'
 
@@ -79,7 +79,7 @@ const products = [
         name: 'Dead Love',
         price: '$11.500',
         category: 'Buzos',
-        img: './src/assets/images/Buzos/7.png',
+        img: './src/assets/images/7.png',
         stock: '7',
         description: 'Buzo oversize de algodon con friza con estampa de "Aquí yace todo lo que alguna vez amé..'
 
@@ -90,7 +90,7 @@ const products = [
         name: 'Rose Love',
         price: '$13.000',
         category: 'Buzos',
-        img: './src/assets/images/Buzos/10.png',
+        img: './src/assets/images/10.png',
         stock: '3',
         description: 'Buzo rústico oversize, estampado con carta de Tarot'
     },
