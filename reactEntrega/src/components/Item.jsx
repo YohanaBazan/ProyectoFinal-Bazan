@@ -6,7 +6,7 @@ const Item = ({ id, name, img, price }) => {
     return (
         <div className="border rounded border-gray-300 shadow-md p-4"    >
             
-            <img className="w-96 h-96" src={img} alt={name} />
+            <img className="w-96 h-96" src={img} alt="images" />
             <h2>{name}</h2>
             
 
