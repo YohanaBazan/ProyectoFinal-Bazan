@@ -1,11 +1,22 @@
 import ItemCount from "./ItemCount";
-import React from 'react';
+import { useContext, useState } from "react";
+import { CartContext } from "../context/CartContext";
+import { Link } from "react-router-dom";
 
-const ItemDetail = ({ name, img, category, price, description, stock }) => {
-    console.log("Imagen:", img);
+
+
+const ItemDetail = ({ id, name, img, category, price, description, stock }) => {
+    const [quantityAdded, setQuantityAdded] = useState(0);
+    const { addItem } = useContext(CartContext);
+
+    const handleOnAdd = (quantity) => {
+        setQuantityAdded(quantity);
+        addItem({ id, name, price }, quantity);
+    };
+
 
     return (
-        <article className='bg-fuchsia-200 p-6 rounded-lg shadow-md flex flex-col justify-center items-center'>
+        <div className="bg-fuchsia-200 p-6 rounded-lg shadow-md flex flex-col justify-center items-center">
             <div className="w-full max-w-md">
                 <div className="overflow-hidden bg-white shadow-md rounded-lg">
                     <img className="w-full" src={img} alt={name} />
@@ -14,12 +25,31 @@ const ItemDetail = ({ name, img, category, price, description, stock }) => {
                         <h3 className="text-sm text-gray-600 mb-4 text-center">Categoría: {category}</h3>
                         <p className="text-gray-800 text-center">{description}</p>
                         <h4 className="text-lg font-bold mt-4 text-center">{price}</h4>
-                        <ItemCount initial={1} stock={stock} onAdd={() => console.log('Cantidad agregada')} />
+                        <h2>Stock disponible: {stock} </h2>
+                    </div>
+                    <div className="ItemFooter">
+                        {quantityAdded > 0 ? (
+                            <Link to="/cart" className="Button">Terminar compra</Link>
+                        ) : (
+                            <ItemCount stock={stock} onAdd={handleOnAdd} />
+                        )}
                     </div>
                 </div>
             </div>
-        </article>
+        </div>
     );
-}
+    
+};
 
 export default ItemDetail;
+
+
+
+
+
+
+
+
+
+
+

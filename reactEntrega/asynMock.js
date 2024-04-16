@@ -38,7 +38,7 @@ const products = [
         category: 'Pantalones',
         img: '../src/assets/images/12.png',
         stock: '7',
-        description: 'Pantalon de gabardina ancho con estampa de calavera en el bolsillo  .'
+        description: 'Pantalon de gabardina ancho con estampa de calavera en el bolsillo.'
 
     },
 
