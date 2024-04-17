@@ -4,9 +4,9 @@ const products = [
         name: 'Butterfly',
         price: '$5.000',
         category: 'Remeras',
-        img: '../src/assets/images/1.png',
+        img: 'https://i.etsystatic.com/49563972/r/il/418d5b/5750858526/il_794xN.5750858526_od8v.jpg',
         stock: '10',
-        description: 'Crop Top con estampa de mariposa y craneo.'
+        description: 'Remera con estampa de mariposa y craneo.'
 
     },
 
@@ -15,7 +15,7 @@ const products = [
         name: 'First Coffe',
         price: '$4.000',
         category: 'Remeras',
-        img: '../src/assets/images/3.png',
+        img: 'https://img.ltwebstatic.com/images3_pi/2024/02/21/90/170850702958406409e2457d73cda9c6f5fb184e58.webp',
         stock: '8',
         description: 'Musculosa Dark, con frase en ingles "No hablar antes del cafe.'
 
@@ -26,7 +26,7 @@ const products = [
         name: 'Lovers',
         price: '$6.000',
         category: 'Remeras',
-        img: '../src/assets/images/20.png',
+        img: 'https://img.ltwebstatic.com/images3_pi/2022/04/07/1649313848b28565a235a503c0e47b1e0197b940c1.webp',
         stock: '5',
         description: 'Remeron con estampa de carta de tarot de "Los Amantes".'
     },
@@ -68,7 +68,7 @@ const products = [
         name: 'Dancers',
         price: '$12.000',
         category: 'Buzos',
-        img: '../src/assets/images/5.png',
+        img: 'https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/f9f3b3c01a284c70806f786b442c5fa2.jpg?imageView2/2/w/800/q/70/format/webp ',
         stock: '8',
         description: 'Buzo rústico oversize con estampa de esqueletos bailando.'
 

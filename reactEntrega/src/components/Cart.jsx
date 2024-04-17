@@ -9,7 +9,7 @@ const Cart = () => {
         return (
             <div className="flex flex-col items-center text-center m-20 p-20 border border-gray-300 rounded-lg shadow-md">
                 <h1 className="text-xl">No hay items en el carrito</h1>
-                <Link to="/" className="mt-4 text-blue-500 hover:underline">Productos</Link>
+                <Link to="/" className="mt-4 text-blue-500 hover:underline">Products</Link>
             </div>
         );
     }

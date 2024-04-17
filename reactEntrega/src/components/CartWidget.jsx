@@ -9,9 +9,9 @@ const CartWidget = () => {
 
     return (
         <div className="flex">
+            <img className= "w-[10%] "src={iconoCarrito} alt="Cart" />
             <span className="text-black">{`(${totalQuantity})`}</span>
             <Link to={"/cart"} className="CartWidget" style={{ display: totalQuantity > 0 ? 'block' : 'none' }}>
-                <img className="CartImg" src={iconoCarrito} alt="Cart" />
             </Link>
         </div>
     );
