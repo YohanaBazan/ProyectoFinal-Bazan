@@ -36,7 +36,7 @@ const products = [
         name: 'Pant Skull',
         price: '$20.000',
         category: 'Pantalones',
-        img: '../src/assets/images/12.png',
+        img: 'https://img.ltwebstatic.com/images3_pi/2022/10/20/16662366942ddb5aaad07d29c99a0a92214ca8f8b9.webp',
         stock: '7',
         description: 'Pantalon de gabardina ancho con estampa de calavera en el bolsillo.'
 
@@ -47,7 +47,7 @@ const products = [
         name: 'Jean Tarot Dark',
         price: '$30.000',
         category: 'Pantalones',
-        img: '../src/assets/images/16.png',
+        img: 'https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/9d0e144f9b9563ac7739b28b000ef946.jpg?imageView2/2/w/800/q/70/format/webp',
         stock: '4',
         description: 'Jean Wide Leg con roturas y estampas de cartas de Tarot.'
     },
@@ -57,9 +57,9 @@ const products = [
         name: 'Black Cargo Disaster',
         price: '$25.000',
         category: 'Pantalones',
-        img: '../src/assets/images/14.png',
+        img: 'https://img.ltwebstatic.com/images3_pi/2023/08/29/9a/1693318121e7cfa0014de7bfbfd7f8cb7e2bb76948_wk_shein.webp',
         stock: '9',
-        description: 'Jean cargo con cadena y estampas varias.'
+        description: 'Jean cargo con varias estampas de calavera'
 
     },
 
@@ -79,7 +79,7 @@ const products = [
         name: 'Dead Love',
         price: '$11.500',
         category: 'Buzos',
-        img: '../src/assets/images/7.png',
+        img: 'https://img.ltwebstatic.com/images3_pi/2021/09/30/1632971495c0e40d2fb6899ed778c3c90016a78686.webp',
         stock: '7',
         description: 'Buzo oversize de algodon con friza con estampa de "Aquí yace todo lo que alguna vez amé..'
 
@@ -90,7 +90,7 @@ const products = [
         name: 'Rose Love',
         price: '$13.000',
         category: 'Buzos',
-        img: '../src/assets/images/10.png',
+        img: 'https://m.media-amazon.com/images/I/813v7fs3trL._AC_SY606_.jpg',
         stock: '3',
         description: 'Buzo rústico oversize, estampado con carta de Tarot'
     },
