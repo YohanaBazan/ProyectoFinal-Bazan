@@ -24,13 +24,16 @@ const ItemDetail = ({ id, name, img, category, price, description, stock }) => {
                         <h4 className="text-lg font-bold mt-4 text-center">{price}</h4>
                         <h2 className="text-center">Stock disponible: {stock}</h2>
                     </div>
-                    <div className="ItemFooter">
-                        {quantityAdded > 0 ? (
-                            <Link to="/cart" className="Button">Terminar compra</Link>
-                        ) : (
-                            <ItemCount stock={stock} onAdd={handleOnAdd} />
-                        )}
-                    </div>
+                    <div className="flex flex-col items-center justify-center  mb-10">
+    {quantityAdded > 0 ? (
+        <Link to="/cart" className="bg-black text-white px-4 py-2 rounded cursor-pointer mt-10 hover:bg-purple-700">Terminar compra</Link>
+    ) : (
+        <ItemCount stock={stock} onAdd={handleOnAdd} />
+    )}
+</div>
+
+
+
                 </div>
             </div>
         </div>

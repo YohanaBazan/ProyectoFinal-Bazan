@@ -9,7 +9,7 @@ const Cart = () => {
         return (
             <div className="flex flex-col items-center text-center m-20 p-20 border border-gray-300 rounded-lg shadow-md">
                 <h1 className="text-xl">No hay items en el carrito</h1>
-                <Link to="/" className="mt-4 text-blue-500 hover:underline">Products</Link>
+                <Link to="/" className="mt-4 text-white bg-black -500 hover:underline">Products</Link>
             </div>
         );
     }
@@ -30,10 +30,14 @@ const Cart = () => {
             ))}
             <h3 className="mt-6 mb-4 text-xl font-semibold">Total: ${totalPrice}</h3>
             <p>Cantidad total de ítems: {totalQuantity}</p>
-            <button onClick={() => clearCart()} className="mt-6 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Limpiar carrito</button>
+            <button onClick={() => clearCart()} className="mt-6 px-4 py-2 bg-black  text-white rounded-md hover:bg-black">Limpiar carrito</button>
             <Link to="/checkOut" className="mt-4 text-blue-500 hover:underline">CheckOut</Link>
         </div>
     );
 };
+
+
+
+
 
 export default Cart;
