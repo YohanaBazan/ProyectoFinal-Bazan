@@ -12,7 +12,6 @@ import {
     documentId,
 } from "firebase/firestore";
 import { db } from "../firebase/firebaseConfig";
-import Cart from "../components/Cart";
 
 
 const CheckOut = () => {
@@ -99,7 +98,6 @@ const CheckOut = () => {
         <div className="checkout-container">
             <h1 className="checkOut-title">CheckOut</h1>
             <CheckOutForm onConfirm={createOrder} />
-            <Cart /> {/* Añadir el componente Cart aquí */}
 
         </div>
     );
