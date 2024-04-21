@@ -1,29 +1,63 @@
-import { useEffect, useState } from "react"
-import { getProductsById } from "../../asynMock";
+import React, { useState, useEffect, useContext } from "react";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
-
-
+import { db } from "../firebase/firebaseConfig";
+import { doc, getDoc } from "firebase/firestore";
+import { CartContext } from "../context/CartContext";
 
 
 const ItemDetailContainer = () => {
+    const { productId } = useParams();
     const [product, setProduct] = useState(null);
-    const {productId} = useParams() 
-    useEffect( ()=>{
-        getProductsById(productId)
-            .then(res =>{
-                setProduct(res)
-            })
-            .catch(error => {
-                console.log(error)
-            })
-    }, [productId])
+    const { addItem } = useContext(CartContext);
+
+    useEffect(() => {
+        const fetchProduct = async () => {
+            try {
+                const productRef = doc(db, "products", productId);
+                const productSnapshot = await getDoc(productRef);
+
+                if (productSnapshot.exists()) {
+                    setProduct({ id: productSnapshot.id, ...productSnapshot.data() });
+                } else {
+                    console.log("El producto no existe");
+                }
+            } catch (error) {
+                console.error("Error al obtener el producto:", error);
+            }
+        };
+
+        fetchProduct();
+    }, [productId]);
+
+    const handleOnAdd = (quantity) => {
+        if (product) {
+            addItem(product, quantity);
+        }
+    };
 
     return (
-    <div>
-        <ItemDetail {...product}/>
-    </div>
-)
-}
+        <div>
+            {product ? (
+                <ItemDetail
+                    id={product.id}
+                    name={product.name}
+                    img={product.img}
+                    category={product.category}
+                    price={product.price}
+                    description={product.description}
+                    stock={product.stock}
+                    handleOnAdd={handleOnAdd}
+                />
+            ) : (
+                <p>Cargando producto...</p>
+            )}
+        </div>
+    );
+};
 
-export default ItemDetailContainer
+export default ItemDetailContainer;
+
+
+
+

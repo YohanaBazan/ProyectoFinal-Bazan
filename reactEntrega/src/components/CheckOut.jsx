@@ -1,7 +1,16 @@
 import React, { useContext, useState, useEffect } from "react";
 import { CartContext } from "../context/CartContext";
 import CheckOutForm from "../components/CheckOutForm";
-import { Timestamp,collection,getDocs,query,writeBatch,where,addDoc,documentId} from "firebase/firestore";
+import {
+    Timestamp,
+    collection,
+    getDocs,
+    query,
+    writeBatch,
+    where,
+    addDoc,
+    documentId,
+} from "firebase/firestore";
 import { db } from "../firebase/firebaseConfig";
 import Cart from "../components/Cart";
 
@@ -90,6 +99,8 @@ const CheckOut = () => {
         <div className="checkout-container">
             <h1 className="checkOut-title">CheckOut</h1>
             <CheckOutForm onConfirm={createOrder} />
+            <Cart /> {/* Añadir el componente Cart aquí */}
+
         </div>
     );
 };
