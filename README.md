@@ -1,5 +1,5 @@
 SKULL WORLD 
-Es un  emprendimiento ficticio, pesando para desarrollar mi primer ecommerce trabajando con React.js. 
+Es un  emprendimiento ficticio, pensando para desarrollar mi primer ecommerce trabajando con React.js. 
 
 Funcionalidades
 Ver una lista de productos disponibles
